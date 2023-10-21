@@ -172,33 +172,8 @@ main img.pequena {
 }
 
 .droid:hover {
-  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.849));
-  animation: droid 1s infinite 3s;
-  position: absolute;
+  filter: drop-shadow(3px 3px 4px rgba(0, 255, 98, 0.857));
   
-}
-
-@keyframes droid {
-  0% {
-    transform: translate(0);
-
-  }
-
-  25% {
-    transform: translate(-5px, 5px);
-  }
-
-  50% {
-    transform: translate(5px, 5px);
-  }
-
-  75% {
-    transform: translate(5px, -5px);
-  }
-
-  100% {
-    transform: translate(0);
-  }
 }
 
 .irina {
