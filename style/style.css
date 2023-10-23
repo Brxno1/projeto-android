@@ -159,7 +159,7 @@ main img {
 }
 
 main img.pequena {
-  max-width: 350px;
+  max-width: 320px;
   display: block;
   margin: auto;
 }
@@ -172,8 +172,11 @@ main img.pequena {
 }
 
 .droid:hover {
-  filter: drop-shadow(3px 3px 4px rgba(0, 255, 98, 0.857));
-  
+  filter: drop-shadow(3px 3px 4px var(--cor2));
+  position: relative;
+  display: inline-block;
+  animation: 1s droid 2s infinite;
+ 
 }
 
 .irina {
@@ -258,5 +261,21 @@ footer a:hover {
 
 }
 
-
+@keyframes droid {
+  0%  {
+    transform: translate(0);
+  }
+  25%{
+   transform: translate(-5px, 5px);
+  }
+  50%{
+   transform: translate(5px ,-5px);
+  }
+  75%{
+   transform: translate(-5px, 5px);
+  }
+  100%{
+   transform: translate(0);
+  }
+ }
 
