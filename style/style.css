@@ -120,7 +120,7 @@ main h2 {
   font-weight: normal;
   font-size: 1.3em;
   font-family: var(--fonte-android);
-  background-image: linear-gradient(to right, var(--cor1), transparent);
+  background-image: linear-gradient(to right, var(--cor2), transparent);
   color: var(--cor4);
   text-indent: 8px;
 
@@ -206,9 +206,9 @@ div.video > iframe {
   position: absolute;
   top: 5%;
   left: 5%;
-  width: 90%;
+  width: 93%;
   height: 90%; 
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 aside {
@@ -228,7 +228,7 @@ aside > h3 {
 }
 
 aside > ul {
-  list-style-type: '\2714\00A0\00A0';
+  list-style-type:'\2714\00A0\00A0';
   list-style-position: inside;
   columns: 2;
 }
