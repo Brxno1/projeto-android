@@ -44,20 +44,21 @@ a.externo::after {
 }
 
 header {
-  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  background: linear-gradient(var(--cor3), var(--cor5));
+  padding-top: 40px;
   min-height: 150px;
   text-align: center;
-  padding-top: 40px;
 
 }
 
 header>h1 {
-  font-size: 3em;
+  font-size: 3em; 
   font-family: var(--fonte-destaque);
   font-weight: normal;
   color: var(--cor6);
   text-align: center;
   text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.64);
+  animation: flip 1s;
 
 }
 
@@ -76,9 +77,9 @@ header>p {
 }
 
 nav {
-  background-color: var(--cor5);
-  padding: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585);
+  background: var(--cor5);
+  padding: 12px;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.585);
 
 }
 
@@ -94,7 +95,6 @@ nav>a:hover {
   background-color: var(--cor3);
   color: var(--cor5);
   border-radius: 5px;
-  font-size: x-large;
   
 }
 
@@ -112,11 +112,13 @@ main {
 }
 
 main h1 {
+  background: linear-gradient(to right, var(--cor2), transparent);
   font-family: Var(--fonte-android);
+  border-radius: 8px;
+  padding: 10px;
   font-weight: normal;
   color: var(--cor5);
   font-size: 1.8em;
-
 
 }
 
@@ -124,10 +126,11 @@ main h2 {
   font-weight: normal;
   font-size: 1.3em;
   font-family: var(--fonte-android);
-  background-image: linear-gradient(to right, var(--cor2), transparent);
-  color: var(--cor4);
+  border-radius: 8px;
+  background: linear-gradient(to right, var(--cor2), transparent);
+  color: var(--cor5);
   text-indent: 8px;
-  padding: 3px;
+  padding: 2px;
 
 }
 
@@ -146,7 +149,6 @@ main strong {
   padding: 3px 6px;
 
 }
-
 main a {
   background-color: var(--cor1);
   color: var(--cor4);
@@ -178,13 +180,12 @@ main img.pequena {
 .droid {
   max-width: 700px;
   margin: auto;
-  position: relative;
-  animation: 1.2s droid 3s infinite;
+  position: static;
   
 }
 
 .droid:hover {
-  filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.415));
+  filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.587));
   position: relative;
   animation: 1.2s droid 3s infinite;
 
@@ -194,7 +195,7 @@ main img.pequena {
   max-width: max-content;
   display: block;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 50%; 
   padding-bottom: 20px;
 
 }
@@ -229,7 +230,7 @@ aside {
 aside>h3 {
   background-color: var(--cor4);
   color: var(--cor6);
-  text-indent: 20px;
+  text-indent: 10px;
   padding: 10px;
   margin: -10px -10px 0px -10px;
   border-radius: 10px 10px 0px 0px;
@@ -259,10 +260,16 @@ aside>p>a:hover {
 
 }
 
+aside>ul>li>abbr {
+  line-height: 2em;
+  font-size: large;
+  
+}
+
 aside>ul>li>abbr:hover {
   background-color: var(--cor2);
   border-radius: 5px;
-  font-size: large;
+  text-decoration: solid;
 }
 
 footer {
@@ -306,5 +313,14 @@ footer a:hover {
 
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
   }
 }
