@@ -32,7 +32,6 @@
 }
 
 body {
-  background-color: var(--cor6);
   background-color: var(--cor5);
   font-family: var(--fonte-padrao);
 
@@ -52,7 +51,7 @@ header {
 }
 
 header>h1 {
-  font-size: 3em; 
+  font-size: 3em;
   font-family: var(--fonte-destaque);
   font-weight: normal;
   color: var(--cor6);
@@ -77,31 +76,37 @@ header>p {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   background: var(--cor5);
-  padding: 12px;
+  padding: 4px;
   box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.585);
 
 }
 
 nav>a {
   color: var(--cor2);
-  padding: 10px;
+  padding: 6px;
+  list-style-type: none;
   text-decoration: none;
   font-weight: bold;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
 }
 
 nav>a:hover {
-  background-color: var(--cor3);
+  background: var(--cor3);
   color: var(--cor5);
   border-radius: 5px;
-  
+  padding: 6px;
+
 }
 
 main {
+  
   min-height: 300px;
   max-width: 1000px;
-  background-color: var(--cor6);
+  background: var(--cor6);
   margin: auto;
   margin-bottom: 30px;
   padding: 20px;
@@ -149,8 +154,9 @@ main strong {
   padding: 3px 6px;
 
 }
+
 main a {
-  background-color: var(--cor1);
+  background: var(--cor1);
   color: var(--cor4);
   border-radius: 4px;
   text-decoration: none;
@@ -181,7 +187,7 @@ main img.pequena {
   max-width: 700px;
   margin: auto;
   position: static;
-  
+
 }
 
 .droid:hover {
@@ -195,13 +201,13 @@ main img.pequena {
   max-width: max-content;
   display: block;
   margin: auto;
-  border-radius: 50%; 
+  border-radius: 50%;
   padding-bottom: 20px;
 
 }
 
 div.video {
-  background-color: var(--cor5);
+  background: var(--cor5);
   margin: 0px -20px 30px -20px;
   padding: 50px;
   padding-bottom: 55.5%;
@@ -220,7 +226,7 @@ div.video>iframe {
 }
 
 aside {
-  background-color: var(--cor1);
+  background: var(--cor1);
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.396);
   padding: 10px;
   border-radius: 10px;
@@ -228,7 +234,7 @@ aside {
 }
 
 aside>h3 {
-  background-color: var(--cor4);
+  background: var(--cor4);
   color: var(--cor6);
   text-indent: 10px;
   padding: 10px;
@@ -245,7 +251,7 @@ aside>ul {
 }
 
 aside>p>a {
-  background-color: var(--cor2);
+  background: var(--cor2);
   color: var(--cor4);
   border-radius: 4px;
   text-decoration: none;
@@ -263,11 +269,11 @@ aside>p>a:hover {
 aside>ul>li>abbr {
   line-height: 2em;
   font-size: large;
-  
+
 }
 
 aside>ul>li>abbr:hover {
-  background-color: var(--cor2);
+  background: var(--cor2);
   border-radius: 5px;
   text-decoration: solid;
 }
@@ -320,6 +326,7 @@ footer a:hover {
   from {
     transform: rotateX(90deg);
   }
+
   to {
     transform: rotateX(0deg);
   }
